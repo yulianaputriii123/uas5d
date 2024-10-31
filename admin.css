@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff1f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff9bbf;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.content, .trending {
+    margin: 2rem;
+}
+
+.posts, .trending {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.pagination {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.pagination button {
+    background-color: #ff9bbf;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.post {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+/* Gaya untuk form di halaman admin */
+form {
+    display: flex;
+    flex-direction: column; /* Mengatur agar elemen dalam form ditampilkan secara vertikal */
+    gap: 1rem; /* Jarak antar elemen form */
+}
+
+label {
+    font-weight: bold; /* Membuat label lebih menonjol */
+}
+
+input[type="text"],
+textarea,
+select {
+    padding: 0.5rem; /* Memberikan padding di dalam input dan textarea */
+    border: 1px solid #ddd; /* Border yang halus */
+    border-radius: 4px; /* Sudut melengkung */
+    font-size: 1rem; /* Ukuran font yang lebih besar */
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #ff9bbf; /* Mengubah warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+button {
+    background-color: #ff4c81; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border default */
+    padding: 0.7rem 1.5rem; /* Padding yang lebih besar untuk tombol */
+    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+    border-radius: 4px; /* Sudut melengkung */
+    font-size: 1rem; /* Ukuran font untuk tombol */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+button:hover {
+    background-color: #ff9bbf; /* Mengubah warna latar belakang saat hover */
+}
+
+#message {
+    color: #d9534f; /* Warna pesan error */
+}

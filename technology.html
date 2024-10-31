@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Technology Posts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Technology Posts</h1>
+        <nav>
+            <a href="admin.html">Admin</a>
+            <a href="index.html">Home</a>
+            <a href="technology.html">Technology</a>
+            <a href="lifestyle.html">Lifestyle</a>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Technology Articles</h2>
+            <div class="posts" id="post-list"></div>
+            <div class="pagination" id="pagination"></div>
+        </section>
+        <aside>
+            <h3>Trending in Technology</h3>
+            <div class="trending" id="trending-list"></div>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>
+    <script src="get_articles.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetchArticles('recent', 1);  // Menampilkan artikel terbaru kategori Technology (category = 1)
+            fetchArticles('popular', 1); // Menampilkan artikel trending kategori Technology (category = 1)
+        });
+    </script>
+</body>
+</html>
